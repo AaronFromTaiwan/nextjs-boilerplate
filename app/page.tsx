@@ -1,6 +1,7 @@
 'use client';
 
-import { Award, Briefcase, Code, Github, Linkedin, Mail, User } from 'lucide-react';
+import { Award, Briefcase, Code, Github, Linkedin, Mail } from 'lucide-react';
+import Image from 'next/image';
 import { Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 // 程式語言技能資料
@@ -17,10 +18,10 @@ const skillsData = [
 
 // 專案經驗資料
 const projectsData = [
-    { name: '前端專案', value: 40, color: '#8884d8' },
-    { name: '全端專案', value: 35, color: '#82ca9d' },
-    { name: '後端專案', value: 15, color: '#ffc658' },
-    { name: '其他', value: 10, color: '#ff7300' },
+    { name: 'Frontend', value: 40, color: '#8884d8' },
+    { name: 'Fullstack', value: 35, color: '#82ca9d' },
+    { name: 'Backend', value: 15, color: '#ffc658' },
+    { name: 'Other', value: 10, color: '#ff7300' },
 ];
 
 export default function Home() {
@@ -30,17 +31,25 @@ export default function Home() {
             <section className="relative px-4 py-16 sm:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto text-center">
                     <div className="mb-8">
-                        <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-                            <User className="w-16 h-16 text-white" />
+                        <div className="overflow-hidden p-[10px] size-32 mx-auto mb-6 bg-white border border-gray-200 rounded-full flex items-center justify-center">
+                            {/* <User className="w-16 h-16 text-white" /> */}
+                            <Image
+                                src="/aaron-pic.jpg"
+                                alt="Aaron Wang"
+                                width={160}
+                                height={160}
+                                style={{ objectFit: "cover" }}
+                                className="rounded-full"
+                            />
                         </div>
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4">
                             Aaron Wang
                         </h1>
                         <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-6">
-                            全端開發工程師 | Full-Stack Developer
+                            全端工程師 | Full-Stack Developer
                         </p>
                         <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
-                            熱愛程式設計與創新技術，專精於現代網頁開發技術棧，致力於創造優質的使用者體驗
+                            熱愛程式設計與新技術，專精於現代網頁開發
                         </p>
                     </div>
 
