@@ -6,21 +6,21 @@ import { Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer,
 
 // 程式語言技能資料
 const skillsData = [
-    { name: 'JavaScript', level: 90, color: '#F7DF1E' },
-    { name: 'TypeScript', level: 85, color: '#3178C6' },
-    { name: 'React', level: 88, color: '#61DAFB' },
-    { name: 'Next.js', level: 82, color: '#000000' },
-    { name: 'Node.js', level: 80, color: '#339933' },
-    { name: 'Python', level: 75, color: '#3776AB' },
-    { name: 'HTML/CSS', level: 92, color: '#E34F26' },
+    { name: 'JavaScript', level: 40, color: '#F7DF1E' },
+    { name: 'TypeScript', level: 20, color: '#3178C6' },
+    { name: 'React', level: 70, color: '#61DAFB' },
+    { name: 'Next.js', level: 65, color: '#000000' },
+    { name: 'Node.js', level: 5, color: '#339933' },
+    { name: 'Python', level: 60, color: '#3776AB' },
+    { name: 'HTML/CSS', level: 90, color: '#E34F26' },
     { name: 'Tailwind CSS', level: 85, color: '#06B6D4' },
 ];
 
 // 專案經驗資料
 const projectsData = [
     { name: 'Frontend', value: 40, color: '#8884d8' },
-    { name: 'Fullstack', value: 35, color: '#82ca9d' },
-    { name: 'Backend', value: 15, color: '#ffc658' },
+    { name: 'Fullstack', value: 30, color: '#82ca9d' },
+    { name: 'Backend', value: 20, color: '#ffc658' },
     { name: 'Other', value: 10, color: '#ff7300' },
 ];
 
